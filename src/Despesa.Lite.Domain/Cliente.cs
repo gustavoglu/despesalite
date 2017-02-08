@@ -12,6 +12,11 @@ namespace Despesa.Lite.Domain
 
         public string RazaoSocial { get; set; }
 
+        public Guid id_cliente_usuarios { get; set; }
+
+        public Cliente_Usuarios Cliente_Usuarios  { get; set; }
+
         public ICollection<Visita> Visitas { get; set; }
+        
     }
 }

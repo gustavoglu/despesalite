@@ -19,6 +19,8 @@ namespace Despesa.Lite.Domain
         public double Outros { get; set; }
 
         public string Detalhes { get; set; }
+
+        public virtual Visita Visita { get; set; }
     }
 
 }

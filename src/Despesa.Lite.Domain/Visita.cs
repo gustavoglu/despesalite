@@ -22,8 +22,8 @@ namespace Despesa.Lite.Domain
 
         public string Observações { get; set; }
 
-        public ICollection<Despesa> Despesas { get; set; }
-
-        public Cliente Cliente { get; set; }
+        //public virtual ICollection<Visita_Despesa> Visita_Despesas { get; set; }
+        public virtual ICollection<Despesa> Despesas { get; set; }
+        public virtual Cliente Cliente { get; set; }
     }
 }
