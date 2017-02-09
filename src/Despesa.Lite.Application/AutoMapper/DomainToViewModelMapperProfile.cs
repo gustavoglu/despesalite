@@ -16,6 +16,7 @@ namespace Despesa.Lite.Application.AutoMapper
             CreateMap<Cliente, ClienteViewModel>().ReverseMap();
             CreateMap<Despesa.Lite.Domain.Despesa, DespesaViewModel>().ReverseMap();
             CreateMap<Visita, VisitaViewModel>().ReverseMap();
+            CreateMap<Cliente_Usuarios, Cliente_UsuariosViewModel>().ReverseMap();
 
         }
     }

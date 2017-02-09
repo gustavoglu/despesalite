@@ -17,6 +17,9 @@ namespace Despesa.Lite.Domain
             var userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
             // Add custom user claims here
             return userIdentity;
+
+           
+            
         }
 
         public bool Companhia { get; set; }
@@ -29,6 +32,6 @@ namespace Despesa.Lite.Domain
 
         public Guid id_conta_usuario { get; set; }
 
-        public virtual Cliente_Usuarios Cliente_Usuarios { get; set; }
+        public virtual ICollection<Cliente_Usuarios> Cliente_Usuarios { get; set; }
     }
 }

@@ -18,7 +18,6 @@ namespace Despesa.Lite.Infra.Data.EntityConfig
 
             Property(c => c.Nome).IsRequired();
 
-
         }
     }
 }

@@ -12,7 +12,10 @@ namespace Despesa.Lite.Domain
 
         public Guid id_cliente { get; set; }
 
-        public ICollection<Cliente> Clientes { get; set; }
+        public virtual Cliente Cliente { get; set; }
+
+        public virtual Usuario Usuario { get; set; }
+
 
     }
 }
